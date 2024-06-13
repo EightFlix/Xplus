@@ -22,26 +22,11 @@ I Am PowerFul Auto Filter With Link Shortener. Just Add Me To Your Group And Enj
     TELE_TXT = """<b>You Can Use This Feature To Upload Image On Telegraph 
 
  • /telegraph - Send Me Picture Or Video Under 5MB.</b>""" 
-
-    GITHUB_TXT = """
-You Can Use This Feature To Search GitHub Repo.
-
-<b>Feature:</b>
-
- /repo: <b>Use This Commands To Search Github Repo</b> 
- Example:<code>/repo auto filter...</code> 
-</b>"""
     
     STICKER_TXT = """<b>You Can Use This Feature To Find Any Stickers ID.  
    
  🚀 How To Use
  ◉ /stickerid  Reply To Any Sticker With This Commands
- </b>"""
-
-    INSTAGRAM_TXT = """<b>You Can Use This Feature To Download Instagram Reel And Photos.  
-   
- 🚀 How To Use
- ⚡ Send Me Instagram Post Link.
  </b>"""
 
     FONT_TXT = """<b>You Can Use This Feature To Change Font Style   
