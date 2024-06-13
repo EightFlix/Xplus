@@ -670,9 +670,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('🚀 Telegraph', callback_data='tele'),
             InlineKeyboardButton('⚡ Fancy Font', callback_data='font') 
          ], [
-            InlineKeyboardButton('🎨 GitHub Repo', callback_data='github'), 
-             InlineKeyboardButton('🚀 InstaFlix', callback_data='insta') 
-         ], [
             InlineKeyboardButton('🏡 Home', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -703,17 +700,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup
         )
 
-    elif query.data == "insta":
-        buttons = [[
-            InlineKeyboardButton('🏄 Back', callback_data='help')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.INSTAGRAM_TXT,
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
-
     elif query.data == "tele":
         buttons = [[
             InlineKeyboardButton('🏄 Back', callback_data='help')
@@ -721,17 +707,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.TELE_TXT,
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
-        
-    elif query.data == "github":
-        buttons = [[
-            InlineKeyboardButton('🏄 Back', callback_data='help')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.GITHUB_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
